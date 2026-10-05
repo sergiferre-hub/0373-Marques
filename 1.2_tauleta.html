@@ -1,53 +1,181 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/> 
-        <title>Taula senzilla</title>
-    </head>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Exercicis HTML - Taules i Formularis</title>
+</head>
 <body>
 
+    <!-- EXERCICI 6: Taula de pel·lícules amb vores -->
     <h1>Listat de pel·lícules</h1>
     <table border="1" bordercolor="black">
         <tr>
-            <!-- Capçaleres -->
             <th>Títol</th>
             <th>Gènere</th>
             <th>Valoració</th>
             <th>Recomanable</th>
         </tr>
-
         <tr>
-            <!-- Contingut -->
             <td>Pulp Fiction</td>
             <td>Acció/Violència</td>
             <td>9</td>
             <td>Sí</td>
         </tr>
-        
         <tr>
-            <!-- Contingut -->
             <td>La vida de Brian</td>
             <td>Comèdia</td>
             <td>10</td>
             <td>Sí</td>
         </tr>
-        
         <tr>
-            <!-- Contingut -->
             <td>Crepúsculo</td>
             <td>Acció</td>
             <td>5</td>
             <td>No</td>
         </tr>
-        
         <tr>
-            <!-- Contingut -->
             <td>Madagascar</td>
             <td>Animació</td>
             <td>8</td>
             <td>Sí</td>
         </tr>
     </table>
+
+    <hr>
+
+    <!-- EXERCICI 7: Primera taula complexa -->
+    <h2>Exercici 7: Taula complexa 1</h2>
+    <table border="1">
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>C</td>
+                        <td>
+                            <table border="1">
+                                <tr><td>D1</td></tr>
+                                <tr><td>D2</td></tr>
+                                <tr><td>D3</td></tr>
+                                <tr><td>D4</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- EXERCICI 8: Segona taula complexa -->
+    <h2>Exercici 8: Taula complexa 2</h2>
+    <table border="1">
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>
+                            <table border="1">
+                                <tr><td>B1</td></tr>
+                                <tr><td>B2</td></tr>
+                                <tr><td>B3</td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="1">
+                                <tr>
+                                    <td>C1</td>
+                                    <td>C2</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- EXERCICI 9: Enllaços relatius d'navegació -->
+    <h2>Exercici 9: Navegació</h2>
+    <nav>
+        <a href="index.html">Inici / Índex</a> | 
+        <a href="exercicis.html">Exercicis</a>
+    </nav>
+
+    <hr>
+
+    <!-- EXERCICI 10: Formulari id="myform" -->
+    <h2>Exercici 10: Formulari</h2>
+    <form id="myform">
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom"><br><br>
+
+        <label for="missatge">Missatge:</label><br>
+        <textarea id="missatge" name="missatge" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr>
+
+    <!-- EXERCICI 12: Taules amb rowspan i colspan -->
+    <h2>Exercici 12: Taules amb Rowspan i Colspan</h2>
+    
+    <h3>Estructura 7 (amb rowspan)</h3>
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D1</td>
+        </tr>
+        <tr><td>D2</td></tr>
+        <tr><td>D3</td></tr>
+        <tr><td>D4</td></tr>
+    </table>
+
+    <h3>Estructura 8 (amb colspan i rowspan)</h3>
+    <table border="1">
+        <tr>
+            <td colspan="3">A</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td rowspan="3">C1</td>
+            <td rowspan="3">C2</td>
+        </tr>
+        <tr><td>B2</td></tr>
+        <tr><td>B3</td></tr>
+    </table>
+
+    <hr>
+
+    <!-- WEBOGRAFIA -->
+    <h2>Webography</h2>
+    <p>Link to W3Schools general documentation ( <a href="https://www.w3schools.com" target="_blank">link</a> ).</p>
 
 </body>
 </html>
