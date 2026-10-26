@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
     background-color: #f9f9f9;
     color: #333;
 }
@@ -8,17 +7,7 @@ body {
 header {
     background-color: #003366;
     color: white;
-    padding: 15px;
     text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    background-color: #e0e0e0;
-    padding: 10px;
 }
 
 nav a {
