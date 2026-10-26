@@ -5,28 +5,36 @@ nav ul {
     padding: 10px;
 }
 
+body {
+    margin: 20px;
+}
+
+header {
+    padding: 15px;
+}
+
 .contenidor-principal {
     display: flex;
-    flex-direction: row;
     gap: 20px;
     margin-top: 20px;
 }
 
 main {
-    flex: 3;
+    flex: 2;
 }
 
 aside {
+    flex: 1; 
     background-color: #f0f0f0;
     padding: 15px;
     border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contenidor-principal {
         flex-direction: column;
     }
-    
+
     nav ul {
         flex-direction: column;
     }
