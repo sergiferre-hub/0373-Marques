@@ -1,0 +1,49 @@
+body {
+    margin: 20px;
+}
+
+header {
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.contenidor-principal {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.articles-contenidor {
+    display: flex;
+    gap: 15px;
+}
+
+article {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .contenidor-principal,
+    .articles-contenidor,
+    nav ul {
+        flex-direction: column;
+    }
+}
